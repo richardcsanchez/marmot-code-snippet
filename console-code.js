@@ -1,5 +1,4 @@
 $(window).on("scroll", function() {
-	if (openedPopUp) return;
 
 		var body = document.body;
 		var html = document.documentElement;
