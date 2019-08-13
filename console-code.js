@@ -7,13 +7,13 @@ function getItems () {
 
   for (var i = 0; i < cartProducts.length; i++) {
     const product = cartProducts[i];
-    const image = product.querySelector('.mini-cart-image img').src
-    const name = product.querySelector(".mini-cart-name").innerText
+    const image = product.querySelector('.mini-cart-image img').src;
+    const name = product.querySelector(".mini-cart-name").innerText;
 
     products.push({
       name,
       image
-    })
+    });
   }
 
 	return products;
@@ -22,10 +22,15 @@ function getItems () {
 function openPopUp() {
 
   const items = getItems().map((item) => `
-    <div>
-      <h4> ${item.name} </h4>
-      <img src='${item.image}'
-    </div>
+      <div class="modal-cart-item" style="padding:10px">
+        <h4 style="font-weight: bold;
+                    font-size: 14px;
+                    float: right;">
+            ${item.name}
+        </h4>
+
+        <img style="padding:4px;" src="${item.image}">
+      </div>
   `)
 
   const cartQuantity = items.length
