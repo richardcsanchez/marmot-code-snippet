@@ -1,4 +1,4 @@
-
+let openedPopUp = false;
 
 function getItems () {
 	var products = [];
@@ -50,9 +50,12 @@ function openPopUp() {
     						style="background: white;
     						padding: 30px 50px;"
     				>
-				<button>
-						X
-				</button>
+
+            <button onClick="closePopUp()" style="float:right;
+    																							font-weight:bold;
+    																							font-size: 15px">
+    						X
+    				</button>
 
 				<h1>
 						Your Cart
@@ -87,10 +90,19 @@ function openPopUp() {
 		</div>
 	`;
 
-  function goToCart() {
-  	window.location.href = document.querySelector('.minicart-link')
-  }
+  openedPopUp = true;
 
+  document.querySelector('body').innerHTML += popUp;
+
+}
+
+function closePopUp () {
+	openedPopUp = false;
+	document.querySelector('.modal-overlay').remove();
+}
+
+function goToCart() {
+  window.location.href = document.querySelector('.minicart-link')
 }
 
 $(window).on("scroll", function() {
