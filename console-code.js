@@ -44,4 +44,47 @@ function openPopUp() {
 
   const orderTotal = $(".order-value")[0].innerText
 
+  const popUpTemplate = `
+
+				<button>
+						X
+				</button>
+
+				<h1>
+						Your Cart
+				</h1>
+
+				<h4>
+						${cartQuantity} items
+				</h4>
+
+				<hr>
+
+				<div>
+					{items}
+				</div>
+
+				<hr>
+
+				<h4>
+						Estimated Total
+				</h4>
+
+				<h4>
+							${orderTotal}
+				</h4>
+
+				<hr>
+
+				<button onClick="goToCart()">
+							CHECKOUT
+				</button>
+			</div>
+		</div>
+	`;
+
+  function goToCart() {
+  	window.location.href = document.querySelector('.minicart-link')
+  }
+
 }
