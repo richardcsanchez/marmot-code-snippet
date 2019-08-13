@@ -46,22 +46,25 @@ function openPopUp() {
     				align-items: center;"
     		>
 
-    			<div class="modal"
-    						style="background: white;
-    						padding: 30px 50px;"
-    				>
+			<div class="modal"
+						style="background: white;
+						padding: 30px 50px;"
+				>
 
-            <button onClick="closePopUp()" style="float:right;
-    																							font-weight:bold;
-    																							font-size: 15px">
-    						X
-    				</button>
+        <button onClick="closePopUp()" style="float:right;
+																							font-weight:bold;
+																							font-size: 15px">
+						X
+				</button>
 
-				<h1>
+        <h1 style="font-size: 35px;
+										padding-bottom: 10px;">
 						Your Cart
 				</h1>
 
-				<h4>
+				<h4 style="font-size: 18px;
+										padding-bottom: 10px;
+										padding-left: 2px;">
 						${cartQuantity} items
 				</h4>
 
@@ -70,7 +73,7 @@ function openPopUp() {
 													margin-bottom: 15px;
 													border-style: solid;">
 
-				<div>
+        <div class="modal-cart-items">
 					{items}
 				</div>
 
