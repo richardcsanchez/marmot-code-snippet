@@ -20,6 +20,7 @@ function getItems () {
 }
 
 function openPopUp() {
+  if (openedPopUp) return;
 
   const items = getItems().map((item) => `
       <div class="modal-cart-item" style="padding:10px">
