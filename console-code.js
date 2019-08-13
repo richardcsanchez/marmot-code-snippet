@@ -40,6 +40,8 @@ function openPopUp() {
     </div>
   `)
 
-  
+  const cartQuantity = items.length
+
+  const orderTotal = $(".order-value")[0].innerText
 
 }
