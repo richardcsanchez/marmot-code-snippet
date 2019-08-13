@@ -33,7 +33,23 @@ function openPopUp() {
   const orderTotal = $(".order-value")[0].innerText
 
   const popUpTemplate = `
+    <div class="modal-overlay"
+    				style="position: fixed;
+    				width: 100%;
+    				height: 100%;
+    				background: rgba(0,0,0,0.5);
+    				top: 0;
+    				left: 0;
+    				z-index: 100;
+    				display: flex;
+    				justify-content: center;
+    				align-items: center;"
+    		>
 
+    			<div class="modal"
+    						style="background: white;
+    						padding: 30px 50px;"
+    				>
 				<button>
 						X
 				</button>
