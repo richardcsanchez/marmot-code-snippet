@@ -65,13 +65,19 @@ function openPopUp() {
 						${cartQuantity} items
 				</h4>
 
-				<hr>
+        <hr style="color: lightgray;
+													margin-top: 20px;
+													margin-bottom: 15px;
+													border-style: solid;">
 
 				<div>
 					{items}
 				</div>
 
-				<hr>
+        <hr style="color: lightgray;
+													margin-top: 20px;
+													margin-bottom: 15px;
+													border-style: solid;">
 
 				<h4>
 						Estimated Total
@@ -81,7 +87,10 @@ function openPopUp() {
 							${orderTotal}
 				</h4>
 
-				<hr>
+        <hr style="color: lightgray;
+													margin-top: 20px;
+													margin-bottom: 15px;
+													border-style: solid;">
 
         <button onClick="goToCart()" style="background-color: rgb(220, 0, 0);
 																				    padding: 12px;
