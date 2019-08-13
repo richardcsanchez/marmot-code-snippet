@@ -27,6 +27,19 @@ function getItems () {
       image
     })
   }
-  
+
 	return products;
+}
+
+function openPopUp() {
+
+  const items = getItems().map((item) => `
+    <div>
+      <h4> ${item.name} </h4>
+      <img src='${item.image}'
+    </div>
+  `)
+
+  
+
 }
