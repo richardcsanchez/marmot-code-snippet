@@ -90,6 +90,8 @@ function openPopUp() {
 		</div>
 	`;
 
+  const popUp = popUpTemplate.replace('{items}', items);
+
   openedPopUp = true;
 
   document.querySelector('body').innerHTML += popUp;
