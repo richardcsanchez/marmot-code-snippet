@@ -82,11 +82,20 @@ function openPopUp() {
 													margin-bottom: 15px;
 													border-style: solid;">
 
-				<h4>
+       <h4 style="size: 14px;
+									font-weight: bold;
+									padding: 5px;
+									text-align: left;
+									display: inline">
 						Estimated Total
 				</h4>
 
-				<h4>
+				<h4 style="font-size: 14px;
+								    font-weight: bold;
+								    padding: 5px;
+								    text-align: right;
+								    display: inline;
+								    padding-left: 150px;">
 							${orderTotal}
 				</h4>
 
