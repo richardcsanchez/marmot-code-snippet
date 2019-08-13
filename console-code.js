@@ -83,7 +83,14 @@ function openPopUp() {
 
 				<hr>
 
-				<button onClick="goToCart()">
+        <button onClick="goToCart()" style="background-color: rgb(220, 0, 0);
+																				    padding: 12px;
+																				    float: none;
+																				    display: block;
+																				    width: -webkit-fill-available;
+																				    text-align: center;
+																				    color: white;
+																				    font-weight: bold;">
 							CHECKOUT
 				</button>
 			</div>
